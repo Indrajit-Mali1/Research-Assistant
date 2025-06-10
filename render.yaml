@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: research-assistant
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: "apt-get update && apt-get install -y openjdk-17-jdk && npm install"
+    startCommand: "npm start"
+    envVars:
+      - key: PORT
+        value: 8080
