@@ -4,7 +4,7 @@ services:
     env: node
     region: oregon
     plan: free
-    buildCommand: "apt-get update && apt-get install -y openjdk-17-jdk && npm install"
+    buildCommand: "bash -c 'apt-get update && apt-get install -y openjdk-17-jdk && npm install'"
     startCommand: "npm start"
     envVars:
       - key: PORT
