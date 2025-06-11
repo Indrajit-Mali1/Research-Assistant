@@ -1,7 +1,7 @@
 const { exec } = require('child_process');
 
 // Run the Spring Boot JAR
-const jarProcess = exec('java -jar F:/New folder/research-assistant/out/artifacts/research_assistant_jar/research-assistant.jar' );
+const jarProcess = exec('java -jar /out/artifacts/research_assistant_jar/research-assistant.jar' );
 
 jarProcess.stdout.on('data', (data) => {
     console.log(data);
